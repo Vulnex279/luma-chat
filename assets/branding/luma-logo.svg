@@ -1,0 +1,69 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lumaGradient" x1="116" y1="92" x2="410" y2="423" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="0.48" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <radialGradient id="auraGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(256 255) rotate(90) scale(220)">
+      <stop stop-color="#8B5CF6" stop-opacity="0.32"/>
+      <stop offset="0.58" stop-color="#38BDF8" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#0B0D12" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+    </filter>
+
+    <filter id="logoGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+    </filter>
+  </defs>
+
+  <circle cx="256" cy="256" r="220" fill="url(#auraGradient)" filter="url(#softGlow)"/>
+
+  <path
+    d="M169 132
+       C125 157 98 202 98 256
+       C98 343 169 414 256 414
+       C310 414 355 387 380 343"
+    stroke="url(#lumaGradient)"
+    stroke-width="34"
+    stroke-linecap="round"
+    filter="url(#logoGlow)"
+    opacity="0.35"
+  />
+
+  <path
+    d="M169 132
+       C125 157 98 202 98 256
+       C98 343 169 414 256 414
+       C310 414 355 387 380 343"
+    stroke="url(#lumaGradient)"
+    stroke-width="26"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M169 132
+       C198 115 226 106 256 106
+       C343 106 414 177 414 264
+       C414 293 406 321 392 345"
+    stroke="url(#lumaGradient)"
+    stroke-width="26"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M256 414
+       C294 414 328 400 355 377"
+    stroke="url(#lumaGradient)"
+    stroke-width="26"
+    stroke-linecap="round"
+  />
+
+  <circle cx="256" cy="256" r="13" fill="#F5F7FA"/>
+  <circle cx="256" cy="256" r="28" fill="#8B5CF6" opacity="0.22" filter="url(#logoGlow)"/>
+</svg>
