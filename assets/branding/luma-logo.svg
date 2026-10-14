@@ -1,69 +1,32 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Luma logo</title>
+  <desc id="desc">A premium abstract symbol of two connected forms creating a protected inner space.</desc>
+
   <defs>
-    <linearGradient id="lumaGradient" x1="116" y1="92" x2="410" y2="423" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#A78BFA"/>
+    <linearGradient id="lumaGradient" x1="184" y1="132" x2="838" y2="890" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B79CFF"/>
       <stop offset="0.48" stop-color="#8B5CF6"/>
       <stop offset="1" stop-color="#38BDF8"/>
     </linearGradient>
-
-    <radialGradient id="auraGradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-      gradientTransform="translate(256 255) rotate(90) scale(220)">
-      <stop stop-color="#8B5CF6" stop-opacity="0.32"/>
-      <stop offset="0.58" stop-color="#38BDF8" stop-opacity="0.10"/>
-      <stop offset="1" stop-color="#0B0D12" stop-opacity="0"/>
-    </radialGradient>
-
-    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="18" result="blur"/>
-    </filter>
-
-    <filter id="logoGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
+    <linearGradient id="innerGradient" x1="334" y1="280" x2="704" y2="738" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5F7FA" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#C4B5FD" stop-opacity="0.84"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="22" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0.55 0 0 0 0.18  0 0.35 0 0 0.08  0 0 0.95 0 0.75  0 0 0 0.52 0"/>
     </filter>
   </defs>
 
-  <circle cx="256" cy="256" r="220" fill="url(#auraGradient)" filter="url(#softGlow)"/>
+  <!-- Optional atmospheric aura. The mark remains strong without it. -->
+  <path d="M512 120C291.914 120 114 297.914 114 518C114 738.086 291.914 916 512 916C732.086 916 910 738.086 910 518C910 297.914 732.086 120 512 120Z" stroke="url(#lumaGradient)" stroke-width="34" stroke-linecap="round" opacity="0.2" filter="url(#softGlow)"/>
 
-  <path
-    d="M169 132
-       C125 157 98 202 98 256
-       C98 343 169 414 256 414
-       C310 414 355 387 380 343"
-    stroke="url(#lumaGradient)"
-    stroke-width="34"
-    stroke-linecap="round"
-    filter="url(#logoGlow)"
-    opacity="0.35"
-  />
+  <!-- Two connected arcs create a quiet, protected social space. -->
+  <path d="M512 166C322.94 166 170 319.94 170 509C170 698.06 322.94 852 512 852" stroke="url(#lumaGradient)" stroke-width="104" stroke-linecap="round"/>
+  <path d="M512 166C701.06 166 854 319.94 854 509C854 698.06 701.06 852 512 852" stroke="url(#lumaGradient)" stroke-width="104" stroke-linecap="round"/>
 
-  <path
-    d="M169 132
-       C125 157 98 202 98 256
-       C98 343 169 414 256 414
-       C310 414 355 387 380 343"
-    stroke="url(#lumaGradient)"
-    stroke-width="26"
-    stroke-linecap="round"
-  />
-
-  <path
-    d="M169 132
-       C198 115 226 106 256 106
-       C343 106 414 177 414 264
-       C414 293 406 321 392 345"
-    stroke="url(#lumaGradient)"
-    stroke-width="26"
-    stroke-linecap="round"
-  />
-
-  <path
-    d="M256 414
-       C294 414 328 400 355 377"
-    stroke="url(#lumaGradient)"
-    stroke-width="26"
-    stroke-linecap="round"
-  />
-
-  <circle cx="256" cy="256" r="13" fill="#F5F7FA"/>
-  <circle cx="256" cy="256" r="28" fill="#8B5CF6" opacity="0.22" filter="url(#logoGlow)"/>
+  <!-- Inner light: presence, warmth, and belonging. -->
+  <path d="M512 350C423.634 350 352 421.634 352 510C352 598.366 423.634 670 512 670C600.366 670 672 598.366 672 510C672 421.634 600.366 350 512 350Z" stroke="url(#innerGradient)" stroke-width="30" opacity="0.95"/>
+  <circle cx="512" cy="510" r="34" fill="#F5F7FA"/>
+  <circle cx="512" cy="510" r="72" fill="#8B5CF6" opacity="0.16" filter="url(#softGlow)"/>
 </svg>
